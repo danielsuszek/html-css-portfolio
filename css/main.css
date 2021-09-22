@@ -213,7 +213,8 @@ button {
     box-shadow: 5px 5px 5px rgba(191, 191, 191, 0.7);
 }
 
-.nav, .nav-mobile {
+.nav, 
+.nav-mobile {
   box-shadow: 5px 5px 5px rgba(171, 171, 171, 0.7);
   /* border-radius: 10px; */
   background-image: linear-gradient(to right, rgba(252,184,135, 0.7), rgba(252,184,135, 1));
@@ -251,12 +252,12 @@ button {
   /* flex-basis: 100%; */
   display: flex;
   flex-direction: column-reverse;
-  position: absolute;
+  position: fixed;
+  z-index: 999;
 }
 
 
-.nav-mobile__links {
-  position: relative;
+.nav-mobile__links {  
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
@@ -376,7 +377,7 @@ button {
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.5);
     background-color: rgba(255, 255, 255, 0.5);   
-}
+}    
 
 .header__info div {
     display: flex;
@@ -737,10 +738,15 @@ button {
 
     .nav {
         display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
         flex-direction: row;
         flex-basis: 100%;
         justify-content: space-around;
         align-items: center;
+        z-index: 999;
     }   
     
     .nav__links {
@@ -981,40 +987,50 @@ button {
     padding: 20px 150px;
   }
 
-    h2 {
-        font: bold 30px 'Libre Franklin';
-        margin: 10px;
-    }
+  h2 {
+      font: bold 30px 'Libre Franklin';
+      margin: 10px;
+  }
 
-    p, .main-content__aboutme li  {
-        font: 18px 'Libre Franklin';    
-    }
+  p, .main-content__aboutme li  {
+      font: 18px 'Libre Franklin';    
+  }
 
-    button {
-        width: 200px;
-        height: 60px;
-        color: #fff;
-        font: bold 18px 'Libre Franklin';        
-        border: transparent;
-        cursor: pointer;    
-        margin: 10px 0 10px 10px;
-    }
-    
-    .main-nav__wrapper {
-        height: 150px;
-        justify-content: space-around;
-        align-items: center;
-    }
+  button {
+      width: 200px;
+      height: 60px;
+      color: #fff;
+      font: bold 18px 'Libre Franklin';        
+      border: transparent;
+      cursor: pointer;    
+      margin: 10px 0 10px 10px;
+  }
+  
+  .nav {
+    position: static;
+    flex-basis: 60%;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  
 
-    .main-nav__initials {
-        display: block;
-        flex-basis: 20%;
-    }
-    
-    .nav {
-        flex-basis: 60%;
-        justify-content: space-around;
-    }
+  .main-nav__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .main-nav__initials {
+      display: block;
+      flex-basis: 20%;
+  }
+  
     
     .header {
         margin-left: -200px;
@@ -1039,7 +1055,7 @@ button {
       /* border: 1px solid #f00; */
       /* margin-right: 0; */
     }
-
+  }
     @media only screen and (min-width: 1400px) {
       .contactdetails__email-phone {
         width: 400px;
