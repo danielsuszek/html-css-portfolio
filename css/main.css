@@ -56,7 +56,9 @@ button {
     background: url('../graphics/button_01.png') no-repeat top left;
     background-color: transparent;*/
 }
-
+#aboutme, #skills, #portfolio, #blog, #contact {
+  scroll-margin: 120px;
+}
 .header__info, 
 .main-content__aboutme-skills,
 .tools,
@@ -965,6 +967,10 @@ button {
   }
 
 @media only screen and (min-width: 1200px) {
+  #aboutme, #skills, #portfolio, #blog, #contact {
+    scroll-margin: 150px;
+  }
+  
   .header__info, 
   .main-content__aboutme-skills,  
   .myworks,
@@ -972,6 +978,7 @@ button {
   .form-contactdetails__wrapper
   {
     padding: 20px 50px;
+    scroll-margin: 150px;
   }
 
   .main-content__aboutme-skills,
