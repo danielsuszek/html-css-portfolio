@@ -381,11 +381,36 @@ button {
     background-color: rgba(255, 255, 255, 0.5);   
 }    
 
-.header__info div {
-    display: flex;
-    justify-content: flex-end;
-}    
+/* .header__github-link {
+  border: 2px dotted #000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}     */
 
+.header__github-link a {
+  display: block;
+  /* border: 1px solid black; */
+  cursor: pointer;
+  color: #000;
+  text-align: right;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);   
+
+}
+
+.header__github-link p {
+  display: inline-block;
+  /* border: 1px dotted #000; */
+  vertical-align: middle;
+}
+
+.header__github-link img {
+  /* border: 1px dotted #000; */
+  vertical-align: middle;
+  margin-right: 15px;
+}
 
 .header__info h2:nth-child(2) {
     padding-bottom: 15px;
@@ -394,10 +419,6 @@ button {
 
 .header__info div p {
     padding: 10px 10px 0 0;    
-}
-
-.header__info img {
-  cursor: pointer;
 }
 
 .header__contactme div {
