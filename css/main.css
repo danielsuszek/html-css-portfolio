@@ -465,6 +465,7 @@ button {
 
 .skills__percentage-hundred,
 .skills__percentage-nighty,
+.skills__percentage-seventy,
 .skills__percentage-sixty {
   display: flex;
   justify-content: flex-end;
@@ -480,6 +481,10 @@ button {
 
 .skills__percentage-nighty {
     flex-basis: 90%;
+}
+
+.skills__percentage-seventy {
+    flex-basis: 70%;
 }
 
 .skills__percentage-sixty {
