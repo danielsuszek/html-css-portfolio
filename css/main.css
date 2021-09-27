@@ -1058,31 +1058,39 @@ button {
       display: block;
       flex-basis: 20%;
   }
+    
+  .header {
+      margin-left: -200px;
+      margin-top: 20px;
+  }
+
+  .header__github-link {
+    display: flex;
+    justify-content: right;
+  }
   
-    
-    .header {
-        margin-left: -200px;
-        margin-top: 20px;
-    }
-    
-    .aboutme-skills {
-        margin-top: 80px;
-    }
-    
-    .post__picture {
-        padding-top: 30px;
-    }
+  .header__github-link a {
+    width: 60%;
+  }
+  
+  .aboutme-skills {
+      margin-top: 80px;
+  }
+  
+  .post__picture {
+      padding-top: 30px;
+  }
 
-    .myworks > p {
-      width: 50%;
-      padding: 10px;
-    }
+  .myworks > p {
+    width: 50%;
+    padding: 10px;
+  }
 
-    .contactdetails__picture div {
-      width: 350px;     
-      /* border: 1px solid #f00; */
-      /* margin-right: 0; */
-    }
+  .contactdetails__picture div {
+    width: 350px;     
+    /* border: 1px solid #f00; */
+    /* margin-right: 0; */
+  }
   }
     @media only screen and (min-width: 1400px) {
       .contactdetails__email-phone {
