@@ -603,32 +603,34 @@ button {
     opacity: 1;
 }
 
- .myworks__item-hover-social #bitbucked-icon {
+ .myworks__item-hover-social #bitbucked-icon img  {
     width: 40px;
     color: #fff;
     position: absolute;
-    /* top: 255px;
-    right: 75px; */
-    top: 193px;
-    right: 75px;
+    bottom: 18px;
+    right: 70px;
 }
 
-.myworks__item-hover-social #dev-icon {
+.myworks__item-hover-social #dev-icon img {
     width: 40px;
     color: #fff;
     position: absolute;
-    /* top: 255px;
-    right: 20px; */
-    top: 193px;
-    right: 20px;
+    right: 15px;
+    bottom: 18px;
 }
 
-.myworks__item-hover-social img {
+#github-icon img {
+  position: absolute;    
+  width: 40px;
+  right: 15px;
+  bottom: 15px;
+}
+/* .myworks__item-hover-social img  {
     position: absolute;    
     width: 40px;
     right: 15px;
     bottom: 15px;
-}    
+}     */
 
 .myworks__item .myworks__item-hover {
     position: absolute;
