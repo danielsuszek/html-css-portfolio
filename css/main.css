@@ -560,7 +560,7 @@ button {
 
 .myworks__item-picture {
     width: 300px;    
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 .myworks__item-picture img {
@@ -582,6 +582,7 @@ button {
     background-image: linear-gradient(to right, rgba(99, 53, 20, 0.4), rgba(156, 86, 32, 0.7));
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.5);
+    transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
 }
 
 .myworks__item-hover h2 {
@@ -597,16 +598,12 @@ button {
   margin: 0;
 }
 
-.myworks__item-hover {
-  transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
-}
-
 .myworks__item:hover .myworks__item-hover {
     visibility: visible;
     opacity: 1;
 }
 
-.myworks__item-hover-social #bitbucked-icon {
+ .myworks__item-hover-social #bitbucked-icon {
     width: 40px;
     color: #fff;
     position: absolute;
@@ -627,7 +624,10 @@ button {
 }
 
 .myworks__item-hover-social img {
+    position: absolute;    
     width: 40px;
+    right: 15px;
+    bottom: 15px;
 }    
 
 .myworks__item .myworks__item-hover {
