@@ -592,6 +592,10 @@ button {
   margin-bottom: 20px;
 }
 
+.myworks__item-hover h2:nth-child(1) {
+  color: #fff;
+}
+
 .myworks__item-hover p {
   font: 20px/5px 'Poppins', sans-serif;
   color: #fff;
